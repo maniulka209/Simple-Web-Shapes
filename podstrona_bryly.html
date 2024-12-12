@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="MainPageCss.css">
-    <style>
-        body{
-            background-color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="3DShapes.css">
 
 </head>
 <body>
+
+    <!--IMPORTANTE-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!--css2drenderer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/examples/js/renderers/CSS2DRenderer.js"></script>
     <script>
+        //essential
         const scene = new THREE.Scene();
         
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -23,32 +23,72 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
 
+        //cube
         const matrial = new THREE.MeshBasicMaterial({wireframe: true});
-        const cubegeometry = new THREE.BoxGeometry(0.5,0.5,0.5);
+        const cubegeometry = new THREE.BoxGeometry(0.6,0.6,0.6);
         const cube = new THREE.Mesh(cubegeometry,matrial);
 
+        //cone
         const conegeometry = new THREE.ConeGeometry(0.4,0.9,20);
         const cone = new THREE.Mesh(conegeometry,matrial);
 
-        scene.add(cube);
-        scene.add(cone)
+        //cylinder
+        const cylindergeometry = new THREE.CylinderGeometry( 0.4, 0.4, 0.9, 16 ); 
+        const cylinder = new THREE.Mesh(cylindergeometry,matrial);
 
+        //sphere
+        const spheregeometry = new THREE.SphereGeometry( 0.5, 30, 10 ); 
+        const sphere = new THREE.Mesh(spheregeometry,matrial );
+
+        //torusknot
+        const knotgeometry = new THREE.TorusKnotGeometry( 1, 0.3, 70, 10 ); 
+        const knot = new THREE.Mesh(knotgeometry,matrial);
+
+
+        //adding
+        scene.add(cube);
+        scene.add(cone);
+        scene.add(cylinder);
+        scene.add(sphere);
+        //scene.add(knot);
+
+        
+        //positions
+        //camera
         camera.position.z = 5;
 
+        //cube
         cube.position.x = -4.5;
         cube.position.y = 2.5;
-
+  
+        //cone
         cone.position.x = -4.5;
         cone.position.y = 1;
-        cone.rotation.x = 0.3
+        cone.rotation.x = -0.1
+        cone.rotation.z = 0.2
+
+        //cylinder
+        cylinder.position.x =-4.5;
+        cylinder.position.y = -0.7
+        cylinder.rotation.z = 0.3
+
+        //sphere
+        sphere.position.x =-4.5;
+        sphere.position.y = -2.5
+        sphere.rotation.z = -0.3
+
+        knot.position.x =4.5;
+        knot.rotation.z = -0.3
         function animate() {
+
             requestAnimationFrame(animate);
 
-            // Rotacja kostki
-            cube.rotation.x += 0.005;
+            //cube.rotation.x += 0.005;
             cube.rotation.y += 0.005;
             //cone.rotation.x += 0.005;
-            cone.rotation.y += 0.007;
+            cone.rotation.y += 0.005;
+            cylinder.rotation.y +=0.005;
+            sphere.rotation.y +=0.005;
             renderer.render(scene, camera);
         }
 
