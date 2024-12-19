@@ -76,19 +76,24 @@
         sphere.position.x =-4.5;
         sphere.position.y = -2.5
         sphere.rotation.z = -0.3
-
+        //knot(experimental)
         knot.position.x =4.5;
         knot.rotation.z = -0.3
+
+        
         function animate() {
 
             requestAnimationFrame(animate);
 
+            //rotations
             //cube.rotation.x += 0.005;
             cube.rotation.y += 0.005;
             //cone.rotation.x += 0.005;
             cone.rotation.y += 0.005;
             cylinder.rotation.y +=0.005;
             sphere.rotation.y +=0.005;
+            
+            //render
             renderer.render(scene, camera);
         }
 
