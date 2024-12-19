@@ -12,6 +12,8 @@
     <!--IMPORTANTE-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <!--css2drenderer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/FontLoader.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/fonts/helvetiker_regular.typeface.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/examples/js/renderers/CSS2DRenderer.js"></script>
     <script>
         //essential
@@ -23,8 +25,10 @@
         renderer.setSize(window.innerWidth, window.innerHeight);
         document.body.appendChild(renderer.domElement);
 
+        
         //cube
         const matrial = new THREE.MeshBasicMaterial({wireframe: true});
+        const matrialnomesh = new THREE.MeshBasicMaterial({ color: 0xffffff });
         const cubegeometry = new THREE.BoxGeometry(0.6,0.6,0.6);
         const cube = new THREE.Mesh(cubegeometry,matrial);
 
@@ -44,12 +48,28 @@
         const knotgeometry = new THREE.TorusKnotGeometry( 1, 0.3, 70, 10 ); 
         const knot = new THREE.Mesh(knotgeometry,matrial);
 
-
+        //textstuff
+        const fontloader = new THREE.FontLoader();
+        fontloader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
+	        const labelgeometry = new TextGeometry( 'Hello three.js!', {
+		        font: font,
+		        size: 80,
+		        depth: 5,
+		        curveSegments: 12,
+		        bevelEnabled: true,
+		        bevelThickness: 10,
+		        bevelSize: 8,
+		        bevelOffset: 0,
+		        bevelSegments: 5
+	        } );
+        } );
+        const label1 = new THREE.Mesh(labelgeometry,matrialnomesh);
         //adding
         scene.add(cube);
         scene.add(cone);
         scene.add(cylinder);
         scene.add(sphere);
+        scene.add(label1);
         //scene.add(knot);
 
         
@@ -60,7 +80,6 @@
         //cube
         cube.position.x = -4.5;
         cube.position.y = 2.5;
-  
         //cone
         cone.position.x = -4.5;
         cone.position.y = 1;
@@ -99,6 +118,11 @@
 
         animate();
 
+        window.addEventListener('resize', () => {
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+    });
     </script>
 </body>
 </html>
