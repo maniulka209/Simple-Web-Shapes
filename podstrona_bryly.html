@@ -13,8 +13,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <!--css2drenderer-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/FontLoader.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/fonts/helvetiker_regular.typeface.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/fonts/helvetiker_regular.typeface.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/examples/js/renderers/CSS2DRenderer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/geometries/TextGeometry.js"></script>
+
     <script>
         //essential
         const scene = new THREE.Scene();
@@ -49,27 +51,34 @@
         const knot = new THREE.Mesh(knotgeometry,matrial);
 
         //textstuff
-        const fontloader = new THREE.FontLoader();
-        fontloader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
-	        const labelgeometry = new TextGeometry( 'Hello three.js!', {
-		        font: font,
-		        size: 80,
-		        depth: 5,
-		        curveSegments: 12,
-		        bevelEnabled: true,
-		        bevelThickness: 10,
-		        bevelSize: 8,
-		        bevelOffset: 0,
-		        bevelSegments: 5
-	        } );
-        } );
-        const label1 = new THREE.Mesh(labelgeometry,matrialnomesh);
+        function addLabel(text, pos, material) {
+            const fontloader = new THREE.FontLoader();
+            fontloader.load('https://threejs.org/examples/fonts/helvetiker_regular.typeface.json', function (font) {
+                const labelGeometry = new THREE.TextGeometry(text, {
+                    font: font,
+                    size: 0.5,
+                    height: 0.1,
+                    curveSegments: 12,
+                    bevelEnabled: false,
+                    bevelThickness: 0.03,
+                    bevelSize: 0.02,
+                    bevelSegments: 5
+                });
+                const label = new THREE.Mesh(labelGeometry, material);
+                label.position.set(pos.x, pos.y, pos.z);
+                scene.add(label);
+            });
+        }
+        addLabel('CUBE', { x: -2.5, y: 2.2, z: 0 }, matrialnomesh);
+        addLabel('CONE', { x: -2.5, y: 0.7, z: 0 }, matrialnomesh);
+        addLabel('CYLINDER', { x: -2.5, y: -0.8, z: 0 }, matrialnomesh);
+        addLabel('SPHERE', { x: -2.5, y: -2.7, z: 0 }, matrialnomesh);
+
         //adding
         scene.add(cube);
         scene.add(cone);
         scene.add(cylinder);
         scene.add(sphere);
-        scene.add(label1);
         //scene.add(knot);
 
         
