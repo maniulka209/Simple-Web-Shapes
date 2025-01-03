@@ -53,6 +53,59 @@
             display: flex;
             flex-direction: row;
         }
+
+        #slider-conteiner{
+            margin-top: -250px;
+            width: 1200px;
+            height: 700px;
+            border: solid 1px black;
+            margin-left: 600px;
+            
+        }
+        #slider-wrapper{
+            top: 50px;
+            position: relative;
+            width: 1000px;
+            margin: 0 auto;
+   
+        }
+        #slider{
+            display: flex;
+            aspect-ratio: 16/9;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory; /* w poloczeniu z   scroll-snap-align: start; daje efekt ze nie moemy zatrymac pomiedzy obrazkami */
+            scroll-behavior: smooth; /* animacje przechodzenia  pomiedy zzdjeciami*/
+            box-shadow:  20px 20px 15px #c4c4c4;
+            border-radius: 8px;
+            overflow-x: hidden
+        }
+        #slider img{
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 100%;
+            scroll-snap-align: start;
+        }
+        #slider-nav{
+            display: flex;
+            column-gap: 16px;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+          
+            z-index: 1;
+        }   
+        #slider-nav a{
+            width: 8px;
+            height: 8px;
+            border-radius: 50% ;
+            background-color: black;
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+        }
+        #slider-nav a:hover{
+            opacity: 1;
+        }
+
     </style>
 </head>
 <body>
@@ -109,9 +162,27 @@
                  Inżynierowie wykorzystują ich właściwości, aby projektować wytrzymałe konstrukcje, a architekci nadają im kształty, które są zarówno estetyczne, jak i funkcjonalne.<br>
                   Nawet natura inspiruje się bryłami – pszczele plastry miodu przypominają sześciokątne graniastosłupy, a planety mają kształt przypominający kule.
                 
+            </div>]
+
+
+            <div id="slider-conteiner">
+            
+                <div id="slider-wrapper">
+                    <div id="slider">
+
+                        <img id="slide-1" src="https://cyrkiel.info/wp-content/uploads/2018/08/Graniastos%C5%82up-prawid%C5%82owy-czworok%C4%85tny.png">
+                        <img id="slide-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOLfYthGgwXsqg3rqS8nkc4WAJEJoHhlVMnBRo5zVo4k7ortiJS4Ctdyx3L9aADzupM3k&usqp=CAU">
+                        <img id="slide-3" src="https://www.math.edu.pl/images/geometria/walec.gif">
+                        
+                    </div>
+                    <div id="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                    </div>
+                </div>
 
             </div>
-            
 
         </div>
         
