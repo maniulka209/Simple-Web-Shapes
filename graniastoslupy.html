@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryły</title>
+    <link  rel="stylesheet" href="MainPageCss.css"></link>
+    <style>
+           #wprowadenie{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            width:1200px;
+            height: 500px;
+            margin-top: 70px;
+            margin-left: 20px;
+            text-align: left;
+            font-size: 30px;
+        }
+        #wyjasnienie{
+            background-color: black ;
+            width: 1100px;
+            height: 350px;
+            margin-top: 100px;
+            margin-left: 50px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 30px;
+            text-align: left;
+            color: white;
+            padding: 10px;
+            padding-left: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 20px 15px  #c4c4c4;
+        }
+        #wlasciwosci{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            width:1200px;
+            height: 500px;
+            margin-top: -51px;
+            margin-left: 20px;
+            text-align: left;
+            font-size: 30px;
+        }
+        #rodzaje{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            width:1200px;
+            height: 700px;
+            margin-top: -51px;
+            margin-left: 20px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        h1{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            
+        }
+        #row1{
+            display: flex;
+            flex-direction: row;
+        }
+        #row2{
+            display: flex;
+            flex-direction: row;
+        }
+        #row3{
+            display: flex;
+            flex-direction: row;
+        }
+        #box2{
+            display: flex;
+            flex-direction: column;
+        }
+        #kalkulator{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 30px;
+            width: 1200px;
+            height: 700px;
+            margin-top: -201px;
+            margin-left: 20px;
+        }
+
+
+
+        #slider-conteiner{
+            width: 900px;
+            height:500px;
+            border: solid 1px black;
+            margin-left: 100px;
+
+        }
+        #slider-wrapper{
+            top: 50px;
+            position: relative;
+            width: 700px;
+            margin: 0 auto;
+            box-shadow:  20px 20px 15px #c4c4c4;
+        }
+        #slider{
+            display: flex;
+            aspect-ratio: 16/9;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory; /* w poloczeniu z   scroll-snap-align: start; daje efekt ze nie moemy zatrymac pomiedzy obrazkami */
+            scroll-behavior: smooth; /* animacje przechodzenia  pomiedy zzdjeciami*/
+            border-radius: 8px;
+            overflow-x: hidden
+        }
+        #slider img{
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 100%;
+            scroll-snap-align: start;
+        }
+        #slider-nav{
+            display: flex;
+            column-gap: 16px;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            margin-top: 30px;
+            z-index: 1;
+        }   
+        #slider-nav a{
+            width: 8px;
+            height: 8px;
+            border-radius: 50% ;
+            background-color: black;
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+        }
+        #slider-nav a:hover{
+            opacity: 1;
+        }
+
+        #parametry{
+            width: 300px;
+            height: 600px;
+        }
+        #wyniki{
+            width: 300px;
+            height: 600px;
+            margin-left: 60px;
+            font-family: "Montserrat", sans-serif;  
+            font-weight: 700;
+            font-style: normal;
+        }
+        input{
+            width: 200px;
+            height: 30px;
+            border: solid 2px black;
+            margin: 10px;
+            text-align: center;
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            margin-left: 10px;
+            margin-top: 10px;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="box1">
+            <div id="catalog">
+                <div id="menu">
+                    <ul>
+                        <li> <a href="index.html">Home</a></li>
+                        <li><a href="podstrona_bryly.html">Bryły 3D </a></li>
+                        <li><a href="graniastoslupy.html">Graniastosłupy</a></li>
+                        <li>dsaadf</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div id="PageName">BRYŁY</div>
+        </div>
+        <div id="box2">
+            <div id="row1">
+                <div id="wprowadenie">
+                    <h1>Graniastosłupy – Wszystko, Co Musisz Wiedzieć</h1>
+                    Graniastosłupy to jedne z najbardziej fascynujących brył geometrycznych, które znajdziemy w matematyce. <br>
+                    Są to figury przestrzenne, które charakteryzują się prostą budową, a jednocześnie otwierają wiele możliwości do nauki i zastosowań w praktyce.<br>
+                    Dowiedz się więcej o ich właściwościach, rodzajach i zastosowaniach!
+                </div>
+                <div id="wyjasnienie">
+                    <h1>Czym jest graniastosłup?</h1>
+                    Graniastosłup to bryła przestrzenna, która składa się z dwóch równoległych i przystających wielokątów (zwanych podstawami) oraz prostokątnych ścian bocznych.<br>
+                    Ściany boczne łączą odpowiednie boki podstaw i są prostopadłe do podstaw w przypadku graniastosłupów prostych.
+                </div>
+            </div>
+            <div id="row2">
+                <div id="wlasciwosci">
+                    <h1>Właściwości graniastosłupów</h1>
+                    <ul>
+                        <li>
+                            <strong>Wierzchołki, krawędzie i ściany</strong>
+                            <br>
+                            Liczba wierzchołków, krawędzi i ścian zależy od liczby boków podstawy. Na przykład, <br>
+                            graniastosłup sześciokątny ma 12 wierzchołków, 18 krawędzi i 8 ścian.
+                        </li>
+                        <li>
+                            <strong>Objętość</strong>
+                            <br>
+                            Objętość graniastosłupa obliczamy jako pole podstawy pomnożone przez wysokość: <br>
+                            V = P * h
+                        </li>
+                        <li>
+                            <strong>Pole powierzchni całkowitej</strong>
+                            <br>
+                            Pole powierzchni to suma pól podstawy oraz pól ścian bocznych.
+                        </li>
+                    </ul>
+                </div>
+                <div id="rodzaje">
+                    <h1>Rodzaje graniastosłupów</h1>
+                    <br>
+                    Graniastosłupy można podzielić na różne rodzaje <br>
+                    <ul>
+                        <li><strong>Graniastosłup prosty </strong> – gdy krawędzie boczne są prostopadłe do podstawy.</li>
+                        <li><strong>Graniastosłup pochyły</strong>– gdy krawędzie boczne nie są prostopadłe do podstawy.</li>
+                        <li><strong>Graniastosłupy foremne </strong>– ich podstawy są wielokątami foremnymi, co oznacza,<br> że mają równe boki i kąty.</li>
+                    </ul>
+                    <br>
+                    w zależności od kształtu podstawy:
+                    <ul>
+                        <li>Trójkątny (podstawą jest trójkąt),</li>
+                        <li>Czworokątny (podstawą jest czworokąt),</li>
+                        <li>Pięciokątny, sześciokątny itd.</li>
+                    </ul>
+                </div>
+            </div>
+        <div id="row3">
+            <div id="kalkulator">
+                <h1>Kalkulator graniastosłupów czworokatnych foremnych</h1>
+                <div id="row1">
+                    <div id="parametry">
+                        <input id="wysokosc" placeholder="podaj wysokosc" type="number">
+                        <input id="bok1" placeholder="podaj pierwszy bok podstawy" type="number">
+                        <input id="bok2" placeholder="podaj drugi bok podstawy" type="number"><br>
+                        <button id="oblicz">Oblicz</button>
+                    </div>
+                    <div id="wyniki">
+                      <div id="row1"> Objetosć : <div id="objestosc" style="width: 140px; height: 30px; border: solid 1px black; margin-left: 7px;"></div></div>
+                      <br>
+                      <div id="row1"> Pole : <div id="pole" style="width: 140px; height: 30px; border: solid 1px black; margin-left: 7px;"></div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="slider">
+                <div id="slider-conteiner">
+            
+                    <div id="slider-wrapper">
+                        <div id="slider">
+    
+                            <img id="slide-1" src="https://www.matmana6.pl/zdjecia/szkola_srednia/geometria_w_przestrzeni_stereometria/prostopadloscian_32.png">
+                            <img id="slide-2" src="https://www.math.edu.pl/images/geometria/graniastoslup-pochyly.gif">
+                            <img id="slide-3" src="https://waszaedukacja.pl/media/img/zadania/203.jpg">
+                            
+                        </div>
+                        <div id="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                            <a href="#slide-3"></a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        </div>
+        
+
+        <div id="box3">
+            <br><br><br><br><br><br><br>
+            Copyright © 2024 Wszelkie prawa zastrzeżone.
+        </div>
+   </div>
+   <script>
+    document.getElementById("oblicz").onclick = function(){
+        var wysokosc = parseFloat(document.getElementById("wysokosc").value);
+        var bok1 = parseFloat(document.getElementById("bok1").value);
+        var bok2 = parseFloat(document.getElementById("bok2").value);
+
+        if(isNaN(bok1) || isNaN(bok2) || isNaN(wysokosc) || 
+            bok1<=0 || bok2 <=0 || wysokosc <=0)
+        {
+            alert("złe dane");
+            return;
+        }
+        else{
+            var objetosc = bok1 * bok2 * wysokosc;
+            var pole = 2* bok1*bok2  + 2* wysokosc*bok1 +  2 * wysokosc*bok2;
+
+            document.getElementById("objestosc").innerText = objetosc.toFixed(2);
+            document.getElementById("pole").innerText = pole.toFixed(2);
+        }
+    }
+   </script>
+</body>
+</html> 
