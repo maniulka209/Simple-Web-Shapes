@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="3DShapes.css">
+    <link rel="stylesheet" href="MainPageCss.css">
 
 </head>
 <body>
@@ -17,6 +17,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/examples/js/renderers/CSS2DRenderer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/geometries/TextGeometry.js"></script>
 
+
+    <div id="box1">
+        <div id="catalog">
+            <div id="menu">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="podstrona_bryly.html">Bryły 3D </a></li>
+                    <li><a href="graniastoslupy.html">Graniastosłupy</a></li>
+                    <li>dsaadf</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div id="PageName">BRYŁY</div>
+    </div>
     <script>
         //essential
         const scene = new THREE.Scene();
@@ -89,6 +104,7 @@
         //cube
         cube.position.x = -4.5;
         cube.position.y = 2.5;
+
         //cone
         cone.position.x = -4.5;
         cone.position.y = 1;
@@ -130,8 +146,10 @@
         window.addEventListener('resize', () => {
         renderer.setSize(window.innerWidth, window.innerHeight);
         camera.aspect = window.innerWidth / window.innerHeight;
-        camera.updateProjectionMatrix();
-    });
+        camera.updateProjectionMatrix();});
+
+
+    
     </script>
 </body>
 </html>
