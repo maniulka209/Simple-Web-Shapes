@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryły</title>
+    <title>Ostroslupy</title>
     <link  rel="stylesheet" href="MainPageCss.css"></link>
     <style>
            #wprowadenie{
@@ -48,7 +48,7 @@
             text-align: left;
             font-size: 30px;
             overflow-x:auto;
-            
+            overflow-y: hidden;
         }
         #rodzaje{
             font-family: "Montserrat", sans-serif;
@@ -204,66 +204,72 @@
         <div id="box2">
             <div id="row1">
                 <div id="wprowadenie">
-                    <h1>Graniastosłupy – Wszystko, Co Musisz Wiedzieć</h1>
-                    Graniastosłupy to jedne z najbardziej fascynujących brył geometrycznych, które znajdziemy w matematyce. <br>
-                    Są to figury przestrzenne, które charakteryzują się prostą budową, a jednocześnie otwierają wiele możliwości do nauki i zastosowań w praktyce.<br>
-                    Dowiedz się więcej o ich właściwościach, rodzajach i zastosowaniach!
+                    <h1>Ostrosłupy – Wszystko, Co Musisz Wiedzieć</h1>
+                    Ostrosłup to jedna z podstawowych brył geometrycznych w trójwymiarowej przestrzeni.<br>
+                    Jest to figura przestrzenna, która łączy w sobie prostotę i elegancję. Składa się z jednej podstawy, <br>
+                    która jest wielokątem, oraz ścian bocznych, będących trójkątami, które spotykają się w jednym punkcie – wierzchołku ostrosłupa.
                 </div>
                 <div id="wyjasnienie">
-                    <h1>Czym jest graniastosłup?</h1>
-                    Graniastosłup to bryła przestrzenna, która składa się z dwóch równoległych i przystających wielokątów (zwanych podstawami) oraz prostokątnych ścian bocznych.<br>
-                    Ściany boczne łączą odpowiednie boki podstaw i są prostopadłe do podstaw w przypadku graniastosłupów prostych.
-                </div>
-            </div>
-            <div id="row2">
-                <div id="wlasciwosci">
-                    <h1>Właściwości graniastosłupów</h1>
+                    <h1>Co to jest ostrosłup?</h1>
+                    Ostrosłup to bryła, w której:
                     <ul>
                         <li>
-                            <strong>Wierzchołki, krawędzie i ściany</strong>
-                            <br>
-                            Liczba wierzchołków, krawędzi i ścian zależy od liczby boków podstawy. Na przykład, <br>
-                            graniastosłup sześciokątny ma 12 wierzchołków, 18 krawędzi i 8 ścian.
+                            <strong>Podstawa</strong> jest wielokątem (np. trójkątem, czworokątem, sześciokątem),
                         </li>
                         <li>
-                            <strong>Objętość</strong>
-                            <br>
-                            Objętość graniastosłupa obliczamy jako pole podstawy pomnożone przez wysokość: <br>
-                            V = P * h
-                        </li>
-                        <li>
-                            <strong>Pole powierzchni całkowitej</strong>
-                            <br>
-                            Pole powierzchni to suma pól podstawy oraz pól ścian bocznych.
+                            <strong>Ściany boczne</strong> to trójkąty, które mają wspólny wierzchołek (punkt, <br>
+                            w którym zbiegają się wszystkie ściany boczne) i łączą się z krawędziami podstawy.
                         </li>
                     </ul>
                 </div>
-                <div id="rodzaje">
-                    <h1>Rodzaje graniastosłupów</h1>
-                    <br>
-                    Graniastosłupy można podzielić na różne rodzaje <br>
-                    <ul>
-                        <li><strong>Graniastosłup prosty </strong> – gdy krawędzie boczne są prostopadłe do podstawy.</li>
-                        <li><strong>Graniastosłup pochyły</strong>– gdy krawędzie boczne nie są prostopadłe do podstawy.</li>
-                        <li><strong>Graniastosłupy foremne </strong>– ich podstawy są wielokątami foremnymi, co oznacza,<br> że mają równe boki i kąty.</li>
-                    </ul>
-                    <br>
-                    w zależności od kształtu podstawy:
-                    <ul>
-                        <li>Trójkątny (podstawą jest trójkąt),</li>
-                        <li>Czworokątny (podstawą jest czworokąt),</li>
-                        <li>Pięciokątny, sześciokątny itd.</li>
-                    </ul>
                 </div>
-            </div>
+                <div id="row2"> 
+                    <div id="wlasciwosci">
+                        <h1>Właściwości ostrosłupów</h1>
+                        <ul>
+                            <li>
+                                <strong>Wierzchołki, krawędzie i ściany</strong>
+                                <br>
+                                Liczba wierzchołków, krawędzi i ścian ostrosłupa zależy od kształtu podstawy. Na przykład, <br>
+                                ostrosłup o podstawie kwadratu ma 5 wierzchołków, 8 krawędzi i 4 ściany boczne.
+                            </li>
+                            <li>
+                                <strong>Objętość</strong>
+                                <br>
+                                Objętość ostrosłupa obliczamy za pomocą wzoru: <br>
+                                V = (1/3) * Pole podstay * h
+                            </li>
+                            <li>
+                                <strong>Pole powierzchni całkowitej</strong>
+                                <br>
+                                Pole powierzchni całkowitej to suma pola podstawy oraz pól wszystkich ścian bocznych, które są trójkątami.
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="rodzaje">
+                        <h1>Rodzaje ostrosłupów</h1>
+                        <br>
+                        Ostrosłupy można podzielić na różne rodzaje w zależności od kształtu ich podstawy:
+                        <ul>
+                            <li><strong>Ostrosłup trójkątny</strong> – gdy podstawa jest trójkątem.</li>
+                            <li><strong>Ostrosłup czworokątny</strong> – gdy podstawa jest czworokątem (np. kwadrat, prostokąt).</li>
+                            <li><strong>Ostrosłup pięciokątny, sześciokątny itd.</strong> – w zależności od liczby boków podstawy.</li>
+                        </ul>
+                        <br>
+                        W zależności od kąta między ścianami bocznymi a podstawą, ostrosłupy dzielą się na:
+                        <ul>
+                            <li><strong>Ostrosłup prosty</strong> – gdy wierzchołek znajduje się nad środkiem podstawy, a ściany boczne są symetryczne.</li>
+                            <li><strong>Ostrosłup pochyły</strong> – gdy wierzchołek nie leży nad środkiem podstawy, a ściany boczne są asymetryczne.</li>
+                        </ul>
+                    </div>
+                </div>
         <div id="row3">
             <div id="kalkulator">
-                <h1>Kalkulator graniastosłupów o podstawie prostokatnej</h1>
+                <h1>Kalkulator ostroslupów foremnym (trojkatnych)</h1>
                 <div id="row1">
                     <div id="parametry">
-                        <input id="wysokosc" placeholder="podaj wysokosc" type="number">
-                        <input id="bok1" placeholder="podaj pierwszy bok podstawy" type="number">
-                        <input id="bok2" placeholder="podaj drugi bok podstawy" type="number"><br>
+                        <input id="wysokosc" placeholder="podaj wysokosc bryly" type="number">
+                        <input id="bok" placeholder="podaj bok podstawy" type="number"><br>
                         <button id="oblicz">Oblicz</button>
                     </div>
                     <div id="wyniki">
@@ -279,9 +285,9 @@
                     <div id="slider-wrapper">
                         <div id="slider">
     
-                            <img id="slide-1" src="img/graniastoslupy page/0.jpg">
-                            <img id="slide-2" src="img/graniastoslupy page/1.jpg">
-                            <img id="slide-3" src="img/graniastoslupy page/2.jpg">
+                            <img id="slide-1" src="img/ostroslup page/0.jpg">
+                            <img id="slide-2" src="img/ostroslup page/12.jpg">
+                            <img id="slide-3" src="img/ostroslup page/1.jpg">
                             
                         </div>
                         <div id="slider-nav">
@@ -308,18 +314,21 @@
    <script>
     document.getElementById("oblicz").onclick = function(){
         var wysokosc = parseFloat(document.getElementById("wysokosc").value);
-        var bok1 = parseFloat(document.getElementById("bok1").value);
-        var bok2 = parseFloat(document.getElementById("bok2").value);
+        var bok = parseFloat(document.getElementById("bok").value);
 
-        if(isNaN(bok1) || isNaN(bok2) || isNaN(wysokosc) || 
-            bok1<=0 || bok2 <=0 || wysokosc <=0)
+        if(isNaN(bok) || isNaN(wysokosc)  || 
+            bok<=0 || wysokosc <=0)
         {
             alert("złe dane");
             return;
         }
         else{
-            var objetosc = bok1 * bok2 * wysokosc;
-            var pole = 2* bok1*bok2  + 2* wysokosc*bok1 +  2 * wysokosc*bok2;
+            var polePodstawy = (Math.sqrt(3) * Math.pow(bok, 2)) / 4;
+
+            var wysokoscScianyBocznej = Math.sqrt(Math.pow(wysokosc, 2) + Math.pow(bok / (2 * Math.sqrt(3)), 2));
+            var poleScianyBocznej = (bok * wysokoscScianyBocznej) / 2;
+            var pole = polePodstawy + 3 * poleScianyBocznej;
+            var objetosc = (polePodstawy * wysokosc) / 3;
 
             document.getElementById("objestosc").innerText = objetosc.toFixed(2);
             document.getElementById("pole").innerText = pole.toFixed(2);

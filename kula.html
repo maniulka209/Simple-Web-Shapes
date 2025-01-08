@@ -204,66 +204,70 @@
         <div id="box2">
             <div id="row1">
                 <div id="wprowadenie">
-                    <h1>Graniastosłupy – Wszystko, Co Musisz Wiedzieć</h1>
-                    Graniastosłupy to jedne z najbardziej fascynujących brył geometrycznych, które znajdziemy w matematyce. <br>
-                    Są to figury przestrzenne, które charakteryzują się prostą budową, a jednocześnie otwierają wiele możliwości do nauki i zastosowań w praktyce.<br>
-                    Dowiedz się więcej o ich właściwościach, rodzajach i zastosowaniach!
+                    <h1>Kula – Wszystko, Co Musisz Wiedzieć</h1>
+                    Kula to jedna z najbardziej symetrycznych brył geometrycznych, którą spotykamy w matematyce. <br>
+                    Jest to figura przestrzenna, w której każdy punkt na powierzchni znajduje się w tej samej odległości od środka. <br>
+                    Dowiedz się więcej o jej właściwościach, obliczeniach i zastosowaniach!
                 </div>
                 <div id="wyjasnienie">
-                    <h1>Czym jest graniastosłup?</h1>
-                    Graniastosłup to bryła przestrzenna, która składa się z dwóch równoległych i przystających wielokątów (zwanych podstawami) oraz prostokątnych ścian bocznych.<br>
-                    Ściany boczne łączą odpowiednie boki podstaw i są prostopadłe do podstaw w przypadku graniastosłupów prostych.
+                    <h1>Czym jest kula?</h1>
+                    Kula to bryła przestrzenna, której wszystkie punkty znajdują się w tej samej odległości od środka. <br>
+                    Jest to szczególny przypadek elipsoidy, w której wszystkie osie mają tę samą długość. Kula nie ma krawędzi ani wierzchołków – jej powierzchnia jest idealnie gładka.
                 </div>
+                
             </div>
-            <div id="row2">
-                <div id="wlasciwosci">
-                    <h1>Właściwości graniastosłupów</h1>
-                    <ul>
-                        <li>
-                            <strong>Wierzchołki, krawędzie i ściany</strong>
-                            <br>
-                            Liczba wierzchołków, krawędzi i ścian zależy od liczby boków podstawy. Na przykład, <br>
-                            graniastosłup sześciokątny ma 12 wierzchołków, 18 krawędzi i 8 ścian.
-                        </li>
-                        <li>
-                            <strong>Objętość</strong>
-                            <br>
-                            Objętość graniastosłupa obliczamy jako pole podstawy pomnożone przez wysokość: <br>
-                            V = P * h
-                        </li>
-                        <li>
-                            <strong>Pole powierzchni całkowitej</strong>
-                            <br>
-                            Pole powierzchni to suma pól podstawy oraz pól ścian bocznych.
-                        </li>
-                    </ul>
+                <div id="row2">
+                    <div id="wlasciwosci">
+                        <h1>Właściwości kuli</h1>
+                        <ul>
+                            <li>
+                                <strong>Wierzchołki, krawędzie i ściany</strong>
+                                <br>
+                                Kula nie ma krawędzi ani wierzchołków. Jest to bryła idealnie symetryczna, w której każdy punkt powierzchni znajduje się w tej samej odległości od środka.
+                            </li>
+                            <li>
+                                <strong>Objętość</strong>
+                                <br>
+                                Objętość kuli obliczamy za pomocą wzoru:
+                                <br>
+                                V = (4/3) * π * r³
+                                <br>
+                                Gdzie r to promień kuli.
+                            </li>
+                            <li>
+                                <strong>Pole powierzchni</strong>
+                                <br>
+                                Pole powierzchni kuli obliczamy ze wzoru:
+                                <br>
+                                P = 4 * π * r²
+                                <br>
+                                Gdzie r to promień kuli.
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="rodzaje">
+                        <h1>Rodzaje kuli</h1>
+                        <br>
+                        Kula jest jedną z nielicznych brył, które mają tylko jeden typ. Niemniej jednak, można ją rozróżnić według jej zastosowania, np.:
+                        <ul>
+                            <li><strong>Kula idealna</strong> – matematyczny model kuli, w którym zakłada się, że jest doskonale gładka i jednorodna.</li>
+                            <li><strong>Kula fizyczna</strong> – kula, która ma określoną masę i strukturę, może być np. piłką sportową.</li>
+                        </ul>
+                        <br>
+                        W zależności od zastosowania, kula może być:
+                        <ul>
+                            <li>Matematyczna – jako doskonały model w geometrii,</li>
+                            <li>Fizyczna – wykorzystywana w różnych dziedzinach, takich jak fizyka czy sport,</li>
+                            <li>Techniczna – stosowana w technice, np. w mechanizmach toczącym się.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="rodzaje">
-                    <h1>Rodzaje graniastosłupów</h1>
-                    <br>
-                    Graniastosłupy można podzielić na różne rodzaje <br>
-                    <ul>
-                        <li><strong>Graniastosłup prosty </strong> – gdy krawędzie boczne są prostopadłe do podstawy.</li>
-                        <li><strong>Graniastosłup pochyły</strong>– gdy krawędzie boczne nie są prostopadłe do podstawy.</li>
-                        <li><strong>Graniastosłupy foremne </strong>– ich podstawy są wielokątami foremnymi, co oznacza,<br> że mają równe boki i kąty.</li>
-                    </ul>
-                    <br>
-                    w zależności od kształtu podstawy:
-                    <ul>
-                        <li>Trójkątny (podstawą jest trójkąt),</li>
-                        <li>Czworokątny (podstawą jest czworokąt),</li>
-                        <li>Pięciokątny, sześciokątny itd.</li>
-                    </ul>
-                </div>
-            </div>
         <div id="row3">
             <div id="kalkulator">
                 <h1>Kalkulator graniastosłupów o podstawie prostokatnej</h1>
                 <div id="row1">
                     <div id="parametry">
-                        <input id="wysokosc" placeholder="podaj wysokosc" type="number">
-                        <input id="bok1" placeholder="podaj pierwszy bok podstawy" type="number">
-                        <input id="bok2" placeholder="podaj drugi bok podstawy" type="number"><br>
+                        <input id="r" placeholder="podaj promien" type="number"><br>
                         <button id="oblicz">Oblicz</button>
                     </div>
                     <div id="wyniki">
@@ -279,9 +283,9 @@
                     <div id="slider-wrapper">
                         <div id="slider">
     
-                            <img id="slide-1" src="img/graniastoslupy page/0.jpg">
-                            <img id="slide-2" src="img/graniastoslupy page/1.jpg">
-                            <img id="slide-3" src="img/graniastoslupy page/2.jpg">
+                            <img id="slide-1" src="img/kula page/0.jpg">
+                            <img id="slide-2" src="img/kula page/1.jpg">
+                            <img id="slide-3" src="img/kula page/2.jpg">
                             
                         </div>
                         <div id="slider-nav">
@@ -307,19 +311,17 @@
    </div>
    <script>
     document.getElementById("oblicz").onclick = function(){
-        var wysokosc = parseFloat(document.getElementById("wysokosc").value);
-        var bok1 = parseFloat(document.getElementById("bok1").value);
-        var bok2 = parseFloat(document.getElementById("bok2").value);
+        var r = parseFloat(document.getElementById("r").value);
 
-        if(isNaN(bok1) || isNaN(bok2) || isNaN(wysokosc) || 
-            bok1<=0 || bok2 <=0 || wysokosc <=0)
+        if(isNaN(r) || 
+            r<=0 )
         {
             alert("złe dane");
             return;
         }
         else{
-            var objetosc = bok1 * bok2 * wysokosc;
-            var pole = 2* bok1*bok2  + 2* wysokosc*bok1 +  2 * wysokosc*bok2;
+            var objetosc = 3.14 * Math.pow(r,2) * (4/3);
+            var pole =  4 * Math.pow(r,2)* 3.14;
 
             document.getElementById("objestosc").innerText = objetosc.toFixed(2);
             document.getElementById("pole").innerText = pole.toFixed(2);

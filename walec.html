@@ -204,66 +204,71 @@
         <div id="box2">
             <div id="row1">
                 <div id="wprowadenie">
-                    <h1>Graniastosłupy – Wszystko, Co Musisz Wiedzieć</h1>
-                    Graniastosłupy to jedne z najbardziej fascynujących brył geometrycznych, które znajdziemy w matematyce. <br>
-                    Są to figury przestrzenne, które charakteryzują się prostą budową, a jednocześnie otwierają wiele możliwości do nauki i zastosowań w praktyce.<br>
-                    Dowiedz się więcej o ich właściwościach, rodzajach i zastosowaniach!
+                    <h1>Walec – Wszystko, Co Musisz Wiedzieć</h1>
+                    Walec to jedna z podstawowych brył geometrycznych, która ma zastosowanie w wielu dziedzinach matematyki i inżynierii. <br>
+                    Jest to figura przestrzenna, która składa się z dwóch równoległych okrągłych podstaw oraz powierzchni bocznej. <br>
+                    Dowiedz się więcej o jego właściwościach, obliczeniach i zastosowaniach!
                 </div>
                 <div id="wyjasnienie">
-                    <h1>Czym jest graniastosłup?</h1>
-                    Graniastosłup to bryła przestrzenna, która składa się z dwóch równoległych i przystających wielokątów (zwanych podstawami) oraz prostokątnych ścian bocznych.<br>
-                    Ściany boczne łączą odpowiednie boki podstaw i są prostopadłe do podstaw w przypadku graniastosłupów prostych.
+                    <h1>Czym jest walec?</h1>
+                    Walec to bryła przestrzenna, składająca się z dwóch równoległych okrągłych podstaw oraz prostokątnej powierzchni bocznej, która łączy brzegi podstaw. <br>
+                    Jest to figura, której symetria jest bardzo wyraźna i jest jedną z najbardziej podstawowych w geometrii przestrzennej.
                 </div>
             </div>
-            <div id="row2">
-                <div id="wlasciwosci">
-                    <h1>Właściwości graniastosłupów</h1>
-                    <ul>
-                        <li>
-                            <strong>Wierzchołki, krawędzie i ściany</strong>
-                            <br>
-                            Liczba wierzchołków, krawędzi i ścian zależy od liczby boków podstawy. Na przykład, <br>
-                            graniastosłup sześciokątny ma 12 wierzchołków, 18 krawędzi i 8 ścian.
-                        </li>
-                        <li>
-                            <strong>Objętość</strong>
-                            <br>
-                            Objętość graniastosłupa obliczamy jako pole podstawy pomnożone przez wysokość: <br>
-                            V = P * h
-                        </li>
-                        <li>
-                            <strong>Pole powierzchni całkowitej</strong>
-                            <br>
-                            Pole powierzchni to suma pól podstawy oraz pól ścian bocznych.
-                        </li>
-                    </ul>
+                
+                <div id="row2">
+                    <div id="wlasciwosci">
+                        <h1>Właściwości walca</h1>
+                        <ul>
+                            <li>
+                                <strong>Wierzchołki, krawędzie i ściany</strong>
+                                <br>
+                                Walec ma dwa okrągłe wierzchołki (podstawy), które są równoległe, a powierzchnia boczna jest prostopadła do podstaw.
+                            </li>
+                            <li>
+                                <strong>Objętość</strong>
+                                <br>
+                                Objętość walca obliczamy za pomocą wzoru:
+                                <br>
+                                V = π * r² * h
+                                <br>
+                                Gdzie r to promień podstawy, a h to wysokość walca.
+                            </li>
+                            <li>
+                                <strong>Pole powierzchni</strong>
+                                <br>
+                                Pole powierzchni walca obliczamy ze wzoru:
+                                <br>
+                                P = 2 * π * r * (r + h)
+                                <br>
+                                Gdzie r to promień podstawy, a h to wysokość walca.
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="rodzaje">
+                        <h1>Rodzaje walców</h1>
+                        <br>
+                        Walce można rozróżnić na różne rodzaje w zależności od ich wymiarów i zastosowania:
+                        <ul>
+                            <li><strong>Walec prosty</strong> – walec, w którym wysokość jest prostopadła do podstawy.</li>
+                            <li><strong>Walec pochylony</strong> – walec, w którym wysokość nie jest prostopadła do podstawy.</li>
+                        </ul>
+                        <br>
+                        W zależności od zastosowania, walec może być:
+                        <ul>
+                            <li>Matematyczny – używany w geometrii i rachunku różniczkowym.</li>
+                            <li>Fizyczny – wykorzystywany np. w silnikach, mechanizmach toczącym się.</li>
+                            <li>Techniczny – stosowany w produkcji elementów cylindrycznych, takich jak rury czy zbiorniki.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="rodzaje">
-                    <h1>Rodzaje graniastosłupów</h1>
-                    <br>
-                    Graniastosłupy można podzielić na różne rodzaje <br>
-                    <ul>
-                        <li><strong>Graniastosłup prosty </strong> – gdy krawędzie boczne są prostopadłe do podstawy.</li>
-                        <li><strong>Graniastosłup pochyły</strong>– gdy krawędzie boczne nie są prostopadłe do podstawy.</li>
-                        <li><strong>Graniastosłupy foremne </strong>– ich podstawy są wielokątami foremnymi, co oznacza,<br> że mają równe boki i kąty.</li>
-                    </ul>
-                    <br>
-                    w zależności od kształtu podstawy:
-                    <ul>
-                        <li>Trójkątny (podstawą jest trójkąt),</li>
-                        <li>Czworokątny (podstawą jest czworokąt),</li>
-                        <li>Pięciokątny, sześciokątny itd.</li>
-                    </ul>
-                </div>
-            </div>
         <div id="row3">
             <div id="kalkulator">
-                <h1>Kalkulator graniastosłupów o podstawie prostokatnej</h1>
+                <h1>Kalkulator walcow</h1>
                 <div id="row1">
                     <div id="parametry">
-                        <input id="wysokosc" placeholder="podaj wysokosc" type="number">
-                        <input id="bok1" placeholder="podaj pierwszy bok podstawy" type="number">
-                        <input id="bok2" placeholder="podaj drugi bok podstawy" type="number"><br>
+                        <input id="wysokosc" placeholder="podaj wysokosc bryly" type="number">
+                        <input id="r" placeholder="podaj promien" type="number"><br>
                         <button id="oblicz">Oblicz</button>
                     </div>
                     <div id="wyniki">
@@ -279,9 +284,9 @@
                     <div id="slider-wrapper">
                         <div id="slider">
     
-                            <img id="slide-1" src="img/graniastoslupy page/0.jpg">
-                            <img id="slide-2" src="img/graniastoslupy page/1.jpg">
-                            <img id="slide-3" src="img/graniastoslupy page/2.jpg">
+                            <img id="slide-1" src="img/walec page/0.jpg">
+                            <img id="slide-2" src="img/walec page/2.jpg">
+                            <img id="slide-3" src="img/walec page/1.jpg">
                             
                         </div>
                         <div id="slider-nav">
@@ -307,19 +312,18 @@
    </div>
    <script>
     document.getElementById("oblicz").onclick = function(){
-        var wysokosc = parseFloat(document.getElementById("wysokosc").value);
-        var bok1 = parseFloat(document.getElementById("bok1").value);
-        var bok2 = parseFloat(document.getElementById("bok2").value);
+        var r = parseFloat(document.getElementById("r").value);
+        var  wysokosc = parseFloat(document.getElementById("wysokosc").value);
 
-        if(isNaN(bok1) || isNaN(bok2) || isNaN(wysokosc) || 
-            bok1<=0 || bok2 <=0 || wysokosc <=0)
+        if(isNaN(r) || isNaN(wysokosc)||
+            r<=0 || wysokosc <= 0 )
         {
             alert("złe dane");
             return;
         }
         else{
-            var objetosc = bok1 * bok2 * wysokosc;
-            var pole = 2* bok1*bok2  + 2* wysokosc*bok1 +  2 * wysokosc*bok2;
+            var objetosc = 3.14 * Math.pow(r,2) * wysokosc;
+            var pole = 2 * 3.14 * r * wysokosc + 2 * 3.14 * Math.pow(r, 2);
 
             document.getElementById("objestosc").innerText = objetosc.toFixed(2);
             document.getElementById("pole").innerText = pole.toFixed(2);
