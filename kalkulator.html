@@ -158,7 +158,7 @@
         //knot(experimental)
         knot.position.x =4.5;
         knot.rotation.z = -0.3
-
+        cone.position.y = 0.5
         function ChangeGlobalValues(){
             globalx = document.getElementById("x").value; //szer
             globaly = document.getElementById("y").value; //wy
@@ -208,9 +208,9 @@
             sphere.rotation.y +=0.005;
 
             cube.scale.set(globalx,globaly,globalz);
-            cone.scale.set(globalx,globaly,globalz*10);
+            cone.scale.set(globalx*0.8,globaly*0.8,globalz*0.8);
             cylinder.scale.set(globalx,globaly,globalz,16);
-            sphere.scale.set(globalx,globaly,globalz);
+            sphere.scale.set(globalx*0.8,globaly*0.7,globalz*0.8);
             //render
             renderer.render(scene, camera);
         }
