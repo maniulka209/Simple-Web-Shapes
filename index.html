@@ -11,7 +11,7 @@
             font-weight: 500;
             font-style: normal;
             width:1200px;
-            height: 700px;
+            height: 900px;
             margin-top: 70px;
             margin-left: 20px;
             text-align: left;
@@ -24,7 +24,7 @@
             font-weight: 500;
             font-style: normal;
             width: 1200px;
-            height: 850px;
+            height: 900px;
             margin-top: 70px;
             margin-left: 100px;
             text-align: center;
@@ -38,8 +38,8 @@
             font-weight: 500;
             font-style: normal;
             width:1200px;
-            height: 700px;
-            margin-top: -70px;
+            height: 600px;
+            margin-top: 0px;
             margin-left: 20px;
             text-align: left;
             font-size: 30px;
@@ -59,19 +59,25 @@
             display: flex;
             flex-direction: row;
         }
+        #row2{
+            display: flex;
+            flex-direction: row;
+
+        }
+
 
         #slider-conteiner{
-            margin-top: -250px;
-            width: 1200px;
-            height: 700px;
+            margin-top: -170px;
+            width: 800px;
+            height: 500px;
             border: solid 1px black;
-            margin-left: 600px;
+            margin-left: 50px;
             
         }   
         #slider-wrapper{
-            top: 50px;
+            top: 30px;
             position: relative;
-            width: 1000px;
+            width: 730px;
             margin: 0 auto;
    
         }
@@ -111,8 +117,39 @@
             opacity: 1;
         }
         #row3{
-            margin-top: -85px;
-           margin-left: 700px;
+            display: flex;
+            flex-direction: row;
+        }
+        #ciekawostki{
+            width: 800px;
+            height: 500px; 
+            margin-top: -140px;
+            display: flex;
+            flex-direction: column;
+        }
+        #ciakawostkiBanner{
+            width: 400px;
+            height: 150px;
+            background-color: black;
+            font-size: 40px;
+            border-radius: 30px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+            color: white;
+            margin-left: 50px;
+            box-shadow:  20px 20px 15px #c4c4c4;
+        }
+        #ciekawostkiinf{
+            width:400px ;
+            height: 300px ;
+            font-size: 20px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin-left: 50px;
+            margin-bottom: 70px;
+            
         }
 
     </style>
@@ -165,7 +202,7 @@
                     </div>
                 </div>
              </div>
-             <div id="row1">
+             <div id="row2">
                 <div id="zastosowanie">
                     <h1>Zastosowania Brył w Życiu Codziennym</h1>
                     
@@ -177,6 +214,28 @@
             </div>
 
             <div id="row3">
+                
+                <div id="ciekawostki">
+                    <button popovertarget="ciekawostkiinf" id="ciakawostkiBanner"> Ciekawostki !</button>
+                    <div popover id="ciekawostkiinf">
+                        <ul>
+                            <li><strong>Piramidy</strong> – W starożytnym Egipcie piramidy były budowane na kształt bryły ostrosłupa,<br>
+                                 co miało symbolizować promieniowanie energii słonecznej.</li>
+                            <li><strong>Bryły platoniczne</strong> – Są to doskonale symetryczne bryły (sześcian, czworościan, ośmiościan itp.),<br>
+                                 które mają zastosowanie nie tylko w matematyce, <br>ale i w sztuce oraz projektowaniu przestrzennym.</li>
+                            <li>
+                               <strong> Paraboloid</strong> – Używany w architekturze mostów i wież (np. w projektach Buckminster'a Fullera), jest idealny do rozpraszania obciążenia.
+                            </li>
+                            <li>
+                                <strong>Torosferyczne bryły</strong> – To kształty przypominające "torebki", 
+                                które w architekturze służą jako niezwykle stabilne struktury, np. w budowlach o dużych rozpiętościach jak hale sportowe.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
                 <div id="slider-conteiner">
                 
                     <div id="slider-wrapper">
