@@ -65,6 +65,7 @@ body{
     background-color: black;
     background-image: none;
     border-radius: 0px;
+    z-index: 10;
     
 
 }
@@ -76,6 +77,7 @@ body{
 #catalog:not(:hover) #menu {
     opacity: 0; 
     visibility: hidden;
+    z-index: 10;
 }
 #menu{
     color: white;
@@ -86,11 +88,13 @@ body{
     visibility: hidden;
     margin-top: 40px;
     transition: opacity 2s ease-in-out;
+    z-index: 10;
 }
 #catalog:hover #menu{
     display: flex;
     opacity: 1; 
     visibility: visible; 
+    z-index: 10;
 }
 a{
     color: white;
