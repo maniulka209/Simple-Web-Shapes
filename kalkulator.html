@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="MainPageCss.css">
 
 </head>
-<body>
+<body style="overflow: hidden;">
 
     <!--IMPORTANTE-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -16,7 +16,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/fonts/helvetiker_regular.typeface.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r132/examples/js/renderers/CSS2DRenderer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/geometries/TextGeometry.js"></script>
-
 
     <div id="box1">
         <div id="catalog">
@@ -57,6 +56,9 @@
             <p>Głębokość <div id="labelz"></div></p>
             <input type="range" step="0.1" min="0.1" max="10" id="z" value="0.5" style="width: 100px;"><br>
         </div>
+        <div class="slidecontainer"><br><br>
+            <p>Copyright © 2024 Wszelkie prawa zastrzeżone.</p>
+        </div>
     </div>
     <script>
         //essential
@@ -94,8 +96,9 @@
         const sphere = new THREE.Mesh(spheregeometry,matrial );
 
         //torusknot
-        const knotgeometry = new THREE.TorusKnotGeometry( 1, 0.3, 70, 10 ); 
+        const knotgeometry = new THREE.OctahedronGeometry(0.4,5); 
         const knot = new THREE.Mesh(knotgeometry,matrial);
+        const knot2 = new THREE.Mesh(knotgeometry,matrial);
 
         //textstuff
         function addLabel(text, pos, material) {
@@ -126,10 +129,11 @@
 /*        scene.add(cube);
         scene.add(cone);
         scene.add(cylinder);
-        scene.add(sphere);
-        //scene.add(knot);
+        scene.add(sphere);*/
+        scene.add(knot);
+        scene.add(knot2);
 
- */       
+     
         //positions
         //camera
         camera.position.z = 5;
@@ -156,8 +160,10 @@
         sphere.position.y = -2.5
         sphere.rotation.z = -0.3    */
         //knot(experimental)
-        knot.position.x =4.5;
-        knot.rotation.z = -0.3
+        knot.position.x =5.1;
+        knot2.position.x = 5.1;
+        knot2.position.y = -3;
+        knot.position.y = 3.25
         cone.position.y = 0.5
         function ChangeGlobalValues(){
             globalx = document.getElementById("x").value; //szer
@@ -202,7 +208,8 @@
             //rotations
             //cube.rotation.x += 0.005;
             cube.rotation.y += 0.005;
-            //cone.rotation.x += 0.005;
+            knot.rotation.y +=0.005;
+            knot2.rotation.y -=0.005;
             cone.rotation.y += 0.005;
             cylinder.rotation.y +=0.005;
             sphere.rotation.y +=0.005;
